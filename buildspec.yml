@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+
+  build:
+    commands:
+      - echo "Build started"
+      - echo "Node.js application build completed"
+
+  post_build:
+    commands:
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - '**/*'
